@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap");
+
+:root {
+  --primary: #0000ff;
+  --secondary: #818b9b;
+  --base-primary: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--base-primary);
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--base-primary);
+  color: var(--base-primary);
+  transition: border-bottom 0.3s ease;
+}
+
+.title:hover {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 1.85rem;
+}
+
+.review-container {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  width: 23rem;
+  height: 11.5rem;
+  background-color: white;
+}
+.review:hover {
+  cursor: pointer;
+}
+.customer-image {
+  height: 100%;
+  width: 50%;
+}
+
+.review img {
+  width: 100%;
+  height: 100%;
+}
+
+.review-details {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding: 1rem;
+  height: 100%;
+  width: 50%;
+}
+
+.customer-image:hover + .review-details {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.review.flex:hover .review-details {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.quote {
+  font-size: 0.9rem;
+  text-align: start;
+  color: var(--secondary);
+}
+
+.name {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--primary);
+}
+
+.flex {
+  display: flex;
+}
