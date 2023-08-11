@@ -117,12 +117,12 @@ body {
 
 .dot {
   font-size: 0.58rem;
-  color: green;
+  color: var(--secondary);
   font-variation-settings: "FILL" 1, "wght" 100, "GRAD" -25, "opsz" 20;
 }
 
 .date {
-  color: darkseagreen;
+  color: var(--secondary);
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.08rem;
