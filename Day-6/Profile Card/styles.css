@@ -33,7 +33,7 @@
 
 .card-container {
   min-width: 32%;
-  min-height: 80%;
+  min-height: 85%;
   background-color: var(--secondary-color);
   border-radius: 0.313rem;
   display: flex;
