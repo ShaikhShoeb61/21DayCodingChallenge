@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap");
+
+:root {
+  --primaary: #359381;
+  --secondary: #fff;
+  --base-primary: #93dfd5;
+  --base-secondary: #003329;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.875rem 6.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--primaary);
+  pointer-events: none;
+  font-weight: 600;
+  margin-right: 12.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.313rem 0.625rem;
+  margin: 0 0.313rem;
+  color: var(--base-primary);
+}
+
+.nav-links a:hover,
+.nav-links a.ctive {
+  color: var(--primaary);
+  border-bottom: 0.125rem solid var(--primaary);
+  transition: width 0.3s ease-in-out;
+}
+
+.parallax-section {
+  position: relative;
+  display: flex;
+  color: var(--secondary);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#text {
+  font-size: 5em;
+  color: var(--secondary);
+  position: absolute;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgb(0, 0, 0, 0.2);
+}
+
+.parallax-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sea-section {
+  background: var(--base-secondary);
+  padding: 6.25rem;
+  position: relative;
+  margin-top: 6.25rem;
+}
+
+.sea-section h2 {
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-bottom: 0.625rem;
+}
+
+.sea-section p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+.sea-section ul {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  font-weight: 300;
+  padding: 1.2rem;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  font-size: 0.8rem;
+  border: none;
+  padding: 1rem;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  background: var(--base-secondary);
+  z-index: 2;
+}
+
+#menu-icon {
+  display: none;
+  color: var(--base-secondary);
+  font-size: 2.063rem;
+}

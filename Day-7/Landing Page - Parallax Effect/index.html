@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nature - Parallax Effect</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2 class="logo">Nature.ai</h2>
+        <nav class="nav-links">
+          <a href="#" class="active">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <section class="parallax-section">
+        <img src="./Assets/images/hill1.png" alt="hill image" id="hill1" />
+        <img src="./Assets/images/hill2.png" alt="hill image" id="hill2" />
+        <img src="./Assets/images/hill3.png" alt="hill image" id="hill3" />
+        <img src="./Assets/images/hill4.png" alt="hill image" id="hill4" />
+        <img src="./Assets/images/hill5.png" alt="hill image" id="hill5" />
+        <img src="./Assets/images/tree.png" alt="tree image" id="tree" />
+        <h2 id="text">NatureVisions</h2>
+        <img src="./Assets/images/leaf.png" alt="leaf" id="leaf" />
+        <img src="./Assets/images/plant.png" alt="plant" id="plant" />
+      </section>
+
+      <section class="sea-section">
+        <h2>Begin an Incredible Expedition</h2>
+        <p>
+          Welcome to the world of Nature.ai, where the marvels of technology
+          blend harmoniously with the breathtaking treasures of the natural
+          world. Our sanctuary is an ode to the synergy between artificial
+          intelligence and the enchanting beauty that graces our planet.
+        </p>
+
+        <p>
+          At the core of Nature.ai lies a realm of possibilities that seeks to
+          redefine your relationship with nature. Immerse yourself in an array
+          of awe-inspiring experiences, facilitated by our AI-powered
+          innovations:
+        </p>
+
+        <ul>
+          <li>
+            Nature-Inspired AI Photos: Discover AI-generated images that
+            encapsulate the essence of serene landscapes, vibrant flora, and
+            captivating wildlife, offering a fresh perspective on nature's
+            intricacies.
+          </li>
+          <li>
+            Virtual Nature Escapes: Embark on virtual journeys that transport
+            you to breathtaking locations around the world, all crafted through
+            the lens of advanced AI technology.
+          </li>
+          <li>
+            AI-Enhanced Wildlife Videos: Witness the magic of wildlife as AI
+            algorithms bring their movements and behaviors to life, allowing you
+            to immerse yourself in their natural habitats.
+          </li>
+          <li>
+            Nature-Artificial Intelligence Fusion: Engage in workshops that
+            combine the artistic expressions of nature with the limitless
+            possibilities of AI, enabling you to create unique masterpieces.
+          </li>
+          <li>
+            Curated AI Galleries: Wander through curated galleries showcasing
+            AI-curated collections that inspire awe and reconnect you with the
+            intricate patterns and details of the natural world.
+          </li>
+        </ul>
+
+        <p>
+          Nature.ai isn't just a platform; it's a conduit for experiencing the
+          world's beauty in an entirely new light. Our mission is to harness
+          AI's power to ignite your passion for nature, foster a deeper
+          connection, and cultivate a renewed appreciation for the Earth's
+          wonders.
+        </p>
+
+        <p>
+          Venture with us into the heart of Nature.ai, where pixels and
+          algorithms coalesce to create a symphony of sight and sound. Each
+          interaction with our AI-driven creations is an invitation to explore,
+          learn, and rediscover the enchanting allure of nature. Every moment
+          spent within our virtual sanctuary is an affirmation of humanity's
+          ability to amplify the magnificence of the world around us.
+        </p>
+      </section>
+      <footer>
+        <p>&copy; 2023 Nature.ai. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      const text = document.querySelector("#text");
+      const leaf = document.querySelector("#leaf");
+      const hill1 = document.querySelector("#hill1");
+      const hill4 = document.querySelector("#hill4");
+      const hill5 = document.querySelector("#hill5");
+
+      window.addEventListener("scroll", () => {
+        const value = window.scrollY;
+
+        text.style.marginTop = `${value * 2.5}px`;
+        leaf.style.top = `${value * -1.5}px`;
+        leaf.style.left = `${value * 1.5}px`;
+        hill5.style.left = `${value * 1.5}px`;
+        hill4.style.left = `${value * -1.5}px`;
+        hill1.style.top = `${value * 0.5}px`;
+      });
+    </script>
+  </body>
+</html>
