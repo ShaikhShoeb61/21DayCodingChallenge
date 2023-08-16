@@ -1,0 +1,95 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(155, 184, 155);
+}
+
+#game-board{
+    width: 80%;
+    min-height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.board-navigation{
+    padding: 0 30%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(72, 104, 72);
+}
+
+#elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+#elem h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#box{
+    color: #000;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.board-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    gap: 15px;
+    width: 100%;
+    height: 90%;
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(72, 104, 72);
+ color: #fff;
+ border-radius: 50%;
+ font-weight: 500;
+
+
+}
+
+#bubble:hover{
+    background-color: rgb(72, 104, 72);
+    cursor: pointer;
+}
+
