@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600&display=swap');
+
+:root {
+  --teritenary:#fac385;  
+  --base-secondary: #000;
+  --secondary-color: #fff;
+  --base-primary:#fd3842;
+  --primary: #fd313f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.container {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #fac385, #fd313f);
+}
+
+#quote-container {
+  min-width: 40%;
+  min-height: 45%;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+
+#quote-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#quote-text p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#quote-text #author {
+  text-align: right !important;
+  width: 100%;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#bottam-navigation {
+  flex-wrap: wrap;
+  position: relative;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#user-action {
+  display: flex;
+  gap: 1rem;
+}
+#user-action a {
+  color: var(--base-secondary);
+}
+
+#voice-icon:hover,
+#copy-icon:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+#quote-generate-btn {
+  color: var(--secondary-color);
+  padding: 0.7rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  background-color: var(--base-primary);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+#quote-generate-btn:hover {
+  cursor: pointer;
+  background-color: var(--teritenary);
+  color: var(--base-secondary);
+}
+
+#copied {
+  position: absolute;
+  display: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  top: 35px;
+  bottom: 24px;
+  left: 30px;
+  z-index: 4;
+}
