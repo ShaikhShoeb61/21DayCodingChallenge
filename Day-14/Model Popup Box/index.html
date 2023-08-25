@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Model Popup Box</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="popup-container">
+        <div id="image-container">
+          <img src="./Assets/bg3.jpg" alt="model" />
+        </div>
+        <div id="popup-content">
+          <i id="close-icon" class="ri-close-fill"></i>
+          <h1 id="offer-title">
+            Wait, get 15% off if you finish your oder now
+          </h1>
+          <div id="coupon-box">
+            <span id="coupon-text"></span>
+            <i
+              id="coupon-copy"
+              class="ri-file-copy-line"
+              onclick="copyCouponCode()"
+            ></i>
+          </div>
+          <div id="subscribe-box">
+            <input id="input-email" type="email" placeholder="Email Address" />
+            <button id="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

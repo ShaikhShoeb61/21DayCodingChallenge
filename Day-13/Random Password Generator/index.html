@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="generateBox">
+        <div id="title">
+          <h1 id="title-one">Generate a</h1>
+          <h1 id="title-two">Random Password</h1>
+        </div>
+        <div id="input-container">
+          <i
+            id="copy-icon"
+            class="ri-file-copy-line"
+            onclick="copyPassword()"
+          ></i>
+          <input id="password" type="text" placeholder="Password" />
+        </div>
+        <button id="generate-btn">Generate Password</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
