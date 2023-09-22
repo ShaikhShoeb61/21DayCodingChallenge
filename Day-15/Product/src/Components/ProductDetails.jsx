@@ -5,7 +5,7 @@ const ProductDetails = () => {
   return (
     <>
        <div className="produt-details">
-          <div className="title">Relaxed Fit Hoodie</div>
+          <div className="title">Relaxed Fit Sweatshirt</div>
           <div className="price-container">
             <div className="price">Rs. 699</div>
             <div className="actual-price">Rs. 1499</div>
