@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --orange: #f47953;
+  --gray: #2e2e2e;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1230px;
+}
+
+.navigation {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .nike-logo {
+  width: 4.25rem;
+  height: 1.374rem;
+}
+
+.navigation > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  gap: 24px;
+}
+
+.navigation > ul > a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 1rem;
+  height: 1.8rem;
+}
+
+.navigation > ul > a:hover {
+  border-bottom: 1px solid var(--black);
+}
+
+.navigation .icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icons .profile-icon {
+  width: 1.6rem;
+  height: 2.375rem;
+}
+
+.icons .cart-icon {
+  width: 1.34rem;
+  height: 2.25rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+.hero > .hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.0625rem;
+  gap: 2.25rem;
+}
+
+.hero-content > h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 3.4375rem;
+}
+
+.hero-content p {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.hero-content .hero-btn {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-content button {
+  all: unset;
+  padding: 0.775rem 1rem;
+  border-radius: 0.1rem;
+  font-size: 0.8rem;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.hero-content .learn-more {
+  padding: 0.375rem 0rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--gray);
+}
+
+.hero-image {
+  height: 30.4375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.learn-more:hover,
+button:hover,
+.profile-icon:hover,
+.cart-icon:hover,
+.nike-logo:hover {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 1232px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 0.8rem;
+    padding: 0rem 1.5rem 2rem 1.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .hero-image {
+    height: 30.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 80%;
+  }
+}
