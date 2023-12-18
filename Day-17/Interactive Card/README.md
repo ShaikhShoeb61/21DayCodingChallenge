@@ -1,8 +1,20 @@
-# React + Vite
+# Interactive Product Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Interactive Product Card Component project! This React project features an interactive product card that allows users to browse between two images, like or unlike the product, and manage the quantity in the cart.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a part of my frontend practice and showcases the following functionalities:
+
+- **Image Sliding:**
+  - Two images are displayed, and users can slide between them using navigation buttons.
+
+- **Like/Unlike Feature:**
+  - Users can like or unlike the product, and the button updates accordingly.
+
+- **Add to Cart:**
+  - The product can be added to the cart, and users can adjust the quantity with increasing and decreasing buttons.
+
+## Chekout Project
+  - Link https://interactive-card2.netlify.app/
+
