@@ -54,7 +54,7 @@ const Signup = () => {
       {/* Same as */}
       <ToastContainer />
 
-      <div className="h-main-height px-7 flex flex-col w-full justify-center items-center gap-12">
+      <div className="min-h-[calc(100vh-148px)] px-7 flex flex-col w-full justify-center items-center gap-12">
         <h1 className="font-bold text-[2rem]">Create your account</h1>
         <div className="w-full flex flex-col gap-5">
           <Formik
